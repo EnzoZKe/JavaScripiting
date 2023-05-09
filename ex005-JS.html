@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<style>
+    main{
+        display: flex;
+    }
+    main button {
+        width: fit-content;
+        padding: 30px;
+        margin-top: 15px;
+        margin-left: 6px;
+    }
+</style>
+<body>
+    
+        <h1>Trabalhando com numeros</h1>
+        <label for="numCalc">Digite um número</label>
+        <input type="text" name="" id="numCalc">
+    <main>
+        <button onclick="calcular()">Clique aqui para calcular</button>
+        <button onclick="resetNum()">Clique aqui para limpar</button>
+    </main>
+    <div class="res">
+        <h1>Seus resultados</h1>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+
+        var resultados = document.getElementById("resultado")
+        var Input = document.getElementById("numCalc")
+
+        function calcular() {
+            var valor = Number(Input.value)
+
+            var dobro = valor * 2
+            var metade = valor / 2
+
+            resultados.innerHTML += `o dobro é ${dobro} e a metade é ${metade}<br>`
+        }
+
+        /*
+        function calcularNum() {
+            var num = document.getElementById("numCalc")
+            var calc = parseFloat(num) * 2
+            var calc2 = parseFloat(num) / 2
+            document.getElementById("resultado").innerHTML = `Dobro de ${num} é ${calc} e sua metade é ${calc2}`
+        }*/
+    </script>
+</body>
+
+</html>

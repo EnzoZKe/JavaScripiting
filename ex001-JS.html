@@ -1,0 +1,53 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<style>
+    button{
+        padding: 20px;
+    }
+</style>
+<body>
+    <h1>Exercicio dos Botões</h1>
+    <button onclick="Botao1()">Azul</button>
+    <button onclick="Botao2()">Rosa</button>
+    <button onclick="Botao3()">Vermelho</button>
+
+    <button onmouseover="Bot()" onmouseleave="Bot2()">Help</button>
+
+    <script>
+        function Botao1() {
+            alert("voce clicou em mim")
+            document.body.style.backgroundColor = "blue"
+        }
+
+        function Botao2() {
+            alert("ta bom, vc ja clicou em mim")
+            document.body.style.backgroundColor = "pink"
+        }
+
+        function Botao3() {
+            alert("PARA DE CLICAR EM MIM MDS")
+            console.log ("anotado isso")
+            document.body.style.backgroundColor = "red"
+        }
+
+        function Bot() {
+            document.body.style.backgroundColor = "green"
+        }
+
+        function Bot2() {
+            document.body.style.backgroundColor = "white"
+            
+        }
+
+    </script>
+    <script>
+        
+    </script>
+</body>
+</html>

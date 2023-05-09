@@ -1,0 +1,62 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<style>
+    * {
+        font-family: arial;
+    }
+
+    body {
+        background-image: linear-gradient(rgb(212, 200, 95), rgb(158, 18, 18));
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    h1 {
+        text-align: center;
+        background-color: aqua;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 20px;
+        width: 200px;
+        background-color: aqua;
+        border-radius: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        background-color: blueviolet;
+    }
+
+    .wa{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+</style>
+
+<body>
+    <h1>Soma uau</h1>
+    <div class="wa">
+        <button onclick="sum()">Soma</button>
+        <p>abre o console pra ver o resultado</p>
+    </div>
+    <script>
+        function sum() {
+            var num1 = prompt('escolhe o numero man')
+            var num2 = prompt('escolhe outro agora')
+            var soma = Number(num1) + Number(num2)
+            console.log(`${num1} + ${num2} = ${soma}`);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<style>
+    h1{
+        font-family: calibri;
+        font-size: 60px;
+    }
+    button{
+        padding: 20px;
+        font-family: calibri;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+
+    img{
+        width: 300px;
+    }
+
+    .mai{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mai button {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    @media(max-width:600px){
+        img{
+            width: 200px;
+        }
+    }
+</style>
+<body>
+    <h1>Trabalhando com Dados</h1>
+    <div class="mai">
+        <button onclick="botaoNome()">Quero saber seu nome!</button>
+
+        <img src="https://media.tenor.com/XO-Nmue7IUkAAAAC/cybergoth-dance-party.gif" alt="">
+    </div>
+    <script>
+        function botaoNome(){
+            var nome = prompt('qual é o seu nome')
+            alert(`ola ${nome} sinta-se a vontade em nosso site. Agradecemos sua presença!`)
+        }
+    </script>
+</body>
+</html>

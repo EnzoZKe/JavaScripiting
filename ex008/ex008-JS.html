@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8</title>
+    <link rel="stylesheet" href="ex008-JS.css">
+    
+</head>
+
+<body>
+    <h1>Calculo de média</h1>
+
+    <main>
+        <div class="wa">
+            <label for="texto">Aluno</label>
+            <input type="text" name="" id="texto">
+        </div>
+
+        <div class="wa">
+            <label for="texto2">Nota 1</label>
+            <input type="number" name="" id="texto2" max="10" min="0">
+        </div>
+
+        <div class="wa">
+            <label for="texto3">Nota 2</label>
+            <input type="number" name="" id="texto3" max="10" min="0">
+        </div>
+
+        <button onclick="Resultado()">Fechar Média</button>
+        
+        <form id="Reset">
+            <button onclick="resetNum()" value="Res">Clique aqui para limpar</button>
+        </form>
+
+        <h1>Resultado</h1>
+        <p id="texto4"></p>
+
+        <h2 id="texto5"></h2>
+
+        
+    </main>
+</body>
+    <script src="ex008-JS.js"></script>
+</html>

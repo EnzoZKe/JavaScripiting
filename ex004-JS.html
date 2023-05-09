@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<style>
+    body {
+        background-image: url("img/dancing.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    div{
+        background-color: rgba(255, 255, 255, 0.441);
+    }
+</style>
+
+<body>
+    <div>
+        <h1>Registro de visitas</h1>
+        <button onclick="botaoClique()">Cadastrar Pessoa</button>
+        <p>quem ja passou por Aqui</p>
+        <p id="passou"></p>
+    </div>
+    <script>
+        function botaoClique() {
+            var nome = prompt('oioi, qual seu nome')
+            alert(`agradecemos a sua presença ${nome}`)
+            document.getElementById("passou").innerHTML += `&#x1F596 acabei de cadastrar <strong> ${nome} </strong> no site <br>`
+        }
+    </script>
+</body>
+
+</html>
