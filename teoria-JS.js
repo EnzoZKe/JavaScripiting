@@ -30,7 +30,7 @@ function Botao2() {
 
 function Botao3() {
     alert("PARA DE CLICAR EM MIM MDS")
-    console.log ("anotado isso")
+    console.log("anotado isso")
     document.body.style.backgroundColor = "red"
 }
 
@@ -40,12 +40,12 @@ function Bot() {
 
 function Bot2() {
     document.body.style.backgroundColor = "white"
-    
+
 }
 console.log("//--------------------------------------------------------------------------------------------------------//")
 
 //mostrar pergunta:
-function botaoNome(){
+function botaoNome() {
     var nome = prompt('qual é o seu nome')
     alert(`ola ${nome} sinta-se a vontade em nosso site. Agradecemos sua presença!`)
 }
@@ -107,16 +107,16 @@ console.log("//-----------------------------------------------------------------
 
 //coisas do teoria kkkkkkkkk
         /*comentario em multiplas linhas*/
-        //comentario em linha unica
+//comentario em linha unica
 
 
-        //alert("Hello World")//um pop-up em janela
-        //console.log ("Olar mundor") //console, usamos pra programar o JS
+//alert("Hello World")//um pop-up em janela
+//console.log ("Olar mundor") //console, usamos pra programar o JS
 
 
-        /*function botaoTeste() {
-            alert("vc clicou em mim")
-        }*/
+/*function botaoTeste() {
+    alert("vc clicou em mim")
+}*/
 /* tem muita coisa aqui!!!!!!!!!!!!!!!!!!!
         //mensagens de exibição do console
         console.error("esta é uma mensagem de erro")
@@ -298,16 +298,16 @@ console.log("//-----------------------------------------------------------------
 //Condição
 
 var idade = 10
-if (idade >= 16){
-    console.log (`você pode votar, porque você tem ${idade} anos`)
+if (idade >= 16) {
+    console.log(`você pode votar, porque você tem ${idade} anos`)
 }
-else{
+else {
     console.log(`você não pode votar, porque você tem ${idade} anos`);
 }
 
 //auto atribuição
 
-var n = 3 
+var n = 3
 n = n + 3 //Variavel que recebe ele mesmo + 3
 n += 3 //Igual a esse ^^^^^^^^
 
@@ -327,8 +327,81 @@ console.log(n1 != n2); //Diferente de
 
 //Mais estrutura condicional
 
-if (n1 > n2){
+if (n1 > n2) {
     console.log("o n1 é maior que o n2"); //condicional caso n1 seja maior que n2
-}else{
+} else {
     console.log("o n2 é maior que o n1"); //condicional caso n2 seja maior que n1
+}
+
+console.log("//--------------------------------------------------------------------------------------------------------//")
+
+//Operadores Lógicos 
+// && representa E
+var user = document.getElementById("user")
+var senha = document.getElementById("senha")
+
+function acesso() {
+    var usuario = user.value
+    var pass = senha.value
+
+    if (usuario == "adm" && pass == "forte") {
+        document.getElementById("texto").innerHTML = `<b class="verde">Parabéns, você entrou</b>`
+    } else {
+        document.getElementById("texto").innerHTML = `<b class="vermelho">Você errou a senha</b>`
+    }
+}
+
+// || representa ou (pipe)
+//Para condição true, uma das opções deve ser verdadeira
+
+if (medida == 6 || medida == 5) {
+    //executa o bloco quando pelo menos uma condição é true pelo menos
+} else {
+    //aqui se todas forem falsas
+}
+
+//estruturas condicionais encadeadas
+if (media >= 7) {
+    console.log("aprovado")
+    //aprovado
+} else if (media >= 5) {
+    console.log("recuperação")
+    //recuperação
+} else if (media < 5) {
+    console.log("reprovado")
+    //reprovado
+}
+
+//debugger para debugar o codigo (ver erros)
+
+//exite
+
+
+//matematica YAY
+//math.random gera um numero aleatorio menor q 1
+var numSort = parseInt(Math.random() * 100) + 1
+console.log(numSort)
+
+
+//switch é como um if, so que mais simples
+var diaWeek = 1
+switch (diaWeek) {
+    case 1:
+        console.log("Hoje é domingo")
+        break;
+
+    case 2:
+        console.log("Hoje é segunda")
+        break;
+
+    case 3:
+        console.log("Hoje é terça")
+        break;
+
+    case 4:
+        console.log("Hoje é quarta")
+        break;
+
+    default: console.log("Hoje é quinta"); //tipo um else
+        break;
 }

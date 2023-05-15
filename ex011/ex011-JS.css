@@ -1,0 +1,36 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: max-content;
+}
+
+button{
+    width: max-content;
+}
+
+#Cor1{
+    color: green;
+}
+
+#Cor2{
+    color: red;
+}
+
+#Cor3{
+    color: red;
+}
+
+#Cor4{
+    color: green;
+}
+
+#Cor5{
+    color: yellow;
+}
+
+#Cor6{
+    color: blue;
+}
