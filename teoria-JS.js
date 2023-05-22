@@ -354,7 +354,7 @@ function acesso() {
 // || representa ou (pipe)
 //Para condição true, uma das opções deve ser verdadeira
 
-if (medida == 6 || medida == 5) {
+/* if (medida == 6 || medida == 5) {
     //executa o bloco quando pelo menos uma condição é true pelo menos
 } else {
     //aqui se todas forem falsas
@@ -370,11 +370,11 @@ if (media >= 7) {
 } else if (media < 5) {
     console.log("reprovado")
     //reprovado
-}
+}*/
 
 //debugger para debugar o codigo (ver erros)
 
-//exite
+//exit
 
 
 //matematica YAY
@@ -405,3 +405,42 @@ switch (diaWeek) {
     default: console.log("Hoje é quinta"); //tipo um else
         break;
 }
+
+//WHILE
+//ele é tipo um if, mas ele repete
+
+var x = 1
+while (x >= 1) {
+    x--
+    console.log(`você tem ${x} coisas`)
+}
+
+
+//verificando se o numero é par com while
+var contador = 1
+while(contador <= 10){
+    if (contador % 2 == 0) {
+        console.log(`${contador} é par`)
+    } else {
+        console.log(`${contador} é impar`)
+    }
+    contador++
+}
+
+//! MAIS COISA DO WHILE
+//todo: Olha como o while é mais chatinho
+
+//! FOR
+//*usando while
+var conta = 1
+while (conta <= 5) {
+    console.log(`esse é o conta ${conta}`)
+    conta ++
+}
+
+//*usando for
+for (let cont2 = 1; cont2 <= 5; cont2++){
+    console.log(`esse é o cont2 ${cont2}`)
+   
+}
+

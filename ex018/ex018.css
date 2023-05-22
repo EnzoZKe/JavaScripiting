@@ -1,0 +1,46 @@
+button img {
+    width: 200px;
+    height: 200px;
+}
+
+.star{
+    width: 30px;
+}
+
+*{
+    font-family: arial;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(88, 16, 156);
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+.bus{
+    display: flex;
+}
+
+.bus .but {
+    margin-right: 10px
+}

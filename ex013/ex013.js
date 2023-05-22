@@ -7,6 +7,7 @@ function when() {
 var mes = parseInt(Math.random() * 24) + 1
 console.log(mes);
 
+
     var nom = nome.value
 
     switch (mes) {

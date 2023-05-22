@@ -1,0 +1,27 @@
+*{
+    font-family: arial;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(88, 16, 156);
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+img{
+    width: 40px;
+}
