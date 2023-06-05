@@ -22,3 +22,11 @@ button{
     margin-bottom: 10px;
     width: fit-content;
 }
+
+.trem{
+    width: 20px;
+}
+
+div{
+    display: flex;
+}

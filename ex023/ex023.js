@@ -49,14 +49,18 @@ function Regs() {
 function mostraDados() {
 
     document.getElementById("logou").innerHTML = ""
-    for (var i in dados) {
 
+
+    //for (var i in dados) {
+
+    dados.forEach ((item, pos) => {
         document.getElementById("logou").innerHTML +=
         `<div>
-            <p> olá ${dados[i].Name}, você criou sua conta, clique a baixo para acessa-lá</p>
+            <p> olá ${item.Name}, você criou sua conta, clique a baixo para acessa-lá</p>
+            <img src="https://www.svgrepo.com/download/78963/rubbish-bin.svg" class="trem" onclick="limparUser(${pos})">
         </div>`
 
-    }
+    })
 
 }
 
@@ -67,20 +71,32 @@ function logar(){
     var veriNome = document.getElementById("confirmarNome").value
     var veriSenha = document.getElementById("validarSenhar").value
 
-    for (var i in dados){
-        if (veriNome != dados[i].Name) {
+    dados.forEach (item => {
+        if (veriNome != item.Name) {
             
             alert("Tem coisa errada!");
-        } else if (veriSenha != dados[i].Passcode) {
+        } else if (veriSenha != item.Passcode) {
 
             alert("Senha errada")
         } else {
             alert("Entrou!!!")
         }
+    })
+
     }
-}
+
 
 function clean(){
     dados = []
+    localStorage.setItem('dodosLogin', JSON.stringify(dados))
     document.getElementById("logou").innerHTML = ""
+}
+
+function limparUser(pos){
+    if(confirm('Deseja deletar tua conta?')){
+        dados.splice(pos, 1)
+        localStorage.setItem('dodosLogin', JSON.stringify(dados))
+        mostraDados()
+    }
+
 }

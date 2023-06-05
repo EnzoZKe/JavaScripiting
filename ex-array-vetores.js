@@ -56,4 +56,22 @@ treco2.forEach( treco2 => {
     console.log(treco2);
 })
 
+console.log(`-------------------------------------------------- ~ forEach ~ ----------------------------------------------------------------`);
 
+//? forEach significa cada item do vetor
+//* dentro dos parenteses colocamos a variavel que irá receber o conteudo de cada linha
+//* e com => {} informamos o que irá executar para cada linha
+//? sintax = vetor.forEach ( item => {coloca algo aqui} )
+
+
+//todo sem posição
+fruits.forEach ( item => { 
+    console.log(item);
+ } )
+
+ console.log(`-------------------------------------------------- ~ forEach com posição ~ -----------------------------------------------------`);
+
+ //todo com posição
+ fruits.forEach ( (item, pos) => { 
+    console.log(pos ,item);
+ } )
