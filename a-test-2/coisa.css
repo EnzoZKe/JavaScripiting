@@ -1,0 +1,9 @@
+main{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+input{
+    margin-bottom: 10px;
+}

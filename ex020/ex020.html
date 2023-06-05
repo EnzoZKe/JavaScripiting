@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>19</title>
-    <link rel="stylesheet" href="ex019.css">
+    <link rel="stylesheet" href="ex020.css">
 </head>
+
 <body>
     <main>
         <button onclick="mostra()">Mostrar filmes</button>
+
+        <button onclick="rando()">Random Movie</button>
+
         <button onclick="add()">Adicionar</button>
+
         <button onclick="limpa()">Limpar</button>
-        <input type="text" name="" id="texto">
+
+        <input type="text" name="" id="texto" placeholder="Nome do Filme">
+
+        <input type="text" name="" id="link" placeholder="Link da imagem">
+
+        <p id="filme_random"></p>
+
         <h1>Resultados</h1>
+
         <p id="res"></p>
     </main>
     <p id="coisa"></p>
 
 </body>
-<script src="ex019.js"></script>
+<script src="ex020.js"></script>
+
 </html>

@@ -6,7 +6,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(88, 16, 156);
+    background-color: rgb(64, 16, 109);
 }
 
 main{
@@ -16,6 +16,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 60%;
 }
 
 input{
@@ -24,4 +25,23 @@ input{
 
 button{
     margin-bottom: 10px;
+}
+
+.Cartaz img {
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#res{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Cartaz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

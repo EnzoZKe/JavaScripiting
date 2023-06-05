@@ -1,11 +1,17 @@
-var movies = ['Sherk', 
-                'Bee Movie', 
-                'Herobrine a lenda', 
-                'The dirt',
-                'Bohemian Rhapsody']
-
+var movies = []                                                                                                                
 function mostra(){
+    document.getElementById("res").innerHTML = ""
     for (var i = 0; i < movies.length; i++)
-    document.getElementById("res").innerHTML += `<p> posição no vetor ${i} - Filme ${movies[i]} </p>`
+    document.getElementById("res").innerHTML += `Filme ${movies[i]} </p>`
     console.log(i);
+}
+
+function add(){
+   if (document.getElementById("texto").value != "") {
+    movies.push(document.getElementById("texto").value)
+   }
+}
+
+function limpa(){
+    document.getElementById("res").innerHTML = ""
 }

@@ -23,3 +23,37 @@ var fruits = ['Maçã', 'Laranja', 'Pera', 'Morango', 'Uva']
 for (var i = 0; i < fruits.length; i++)
 console.log(fruits[i])
 console.log('------------------------------------------------------------------------------------------------------------------------------');
+
+//* adicionando vetores
+
+fruits.push ('Abacaxi')
+console.log(fruits);
+console.log(fruits.length);
+
+console.log('-------------------------------------- ~ Jeitos mais faceis de usar for ~ -----------------------------------------------------');
+
+for (i in fruits)
+    console.log(i + ' - ' + fruits[i]);
+
+console.log('------------------------------------------------ ~ For each ~ -----------------------------------------------------------------');
+fruits.forEach( fruits => {
+    console.log(fruits)
+})
+
+console.log('-------------------------------------------------- ~ Exemplo ~ ----------------------------------------------------------------');
+
+//! USANDO for (i in coisa)
+var treco = ['coisa 1', 'coisa 2', 'coisa 3', 'coisa 4', 'coisa 5']
+for (i in treco)
+    console.log(i, ' - ', treco[i]);    
+
+
+
+    //! USANDO coisa.forEach( coisa => {})
+var treco2 = ['coisa 6', 'coisa 7', 'coisa 8', 'coisa 9', 'coisa 10', ]
+
+treco2.forEach( treco2 => {
+    console.log(treco2);
+})
+
+

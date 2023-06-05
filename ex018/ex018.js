@@ -6,7 +6,7 @@ function add(value){
 
     lifes += value
 
-    for (let index = 0; index < lifes; index++) {
+    for (let index = 0; index <= lifes; index++) {
         document.getElementById("life").innerHTML += `<img src="https://i.gifer.com/origin/23/238a465012f48c55b9c96c351be7eadd.gif" alt="" class="star">`
     }
 
